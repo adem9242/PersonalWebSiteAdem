@@ -1,0 +1,215 @@
+﻿
+@{
+    Layout = null;
+}
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Adem YILMAZ-Bilgisayar Mühendisi</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <!-- Favicons -->
+    <link href="~/img/favicon.png" rel="icon">
+    <link href="~/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Bootstrap CSS File -->
+    <link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Libraries CSS Files -->
+    <link href="~/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="~/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="~/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="~/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="~/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <!-- Main Stylesheet File -->
+    <link href="~/css/style.css" rel="stylesheet">
+
+    <!-- =======================================================
+      Theme Name: DevFolio
+      Theme URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+      Author: BootstrapMade.com
+      License: https://bootstrapmade.com/license/
+    ======================================================= -->
+
+
+</head>
+<body id="page-top">
+    <!--/ Nav Star /-->
+    <nav style="width:100%;background-color:#6699cc;" class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+        <div class="container">
+            <a style="color:darkred;" class="navbar-brand js-scroll" href="/Home/Index">ADEM YILMAZ</a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+                    aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a style="color:darkred;" class="nav-link js-scroll" href="/Home/#home">Anasayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="color:darkred;" class="nav-link js-scroll" href="/Home/#about">Hakkında</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="color:darkred;" class="nav-link js-scroll" href="/Home/#service">HİZMETLER</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="color:darkred;" class="nav-link js-scroll" href="/Home/#work">Çalışmalar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="color:darkred;" class="nav-link js-scroll" href="/Home/#blog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a style="color:darkred;" class="nav-link js-scroll active" href="/Home/iletisim">İLETİŞİM</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(../../img/iletisimbg.jpg)">
+        <div class="overlay-mf"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="contact-mf">
+
+                        <div id="contact" class="box-shadow-full">
+
+                            <div class="row">
+
+                                <div class="col-md-6">
+                                    <div class="title-box-2">
+                                        <h5 class="title-left">
+                                            Bana mesaj gönder
+                                        </h5>
+                                    </div>
+                                    <div>
+                                        <form action="" href="" method="post" role="form">
+                                            <div id="sendmessage">Your message has been sent. Thank you!</div>
+                                            <div id="errormessage"></div>
+                                            <div class="row">
+                                                <div class="col-md-12 mb-3">
+                                                    <div class="form-group">
+                                                       <input type="text" name="name" class="form-control" id="name" placeholder="Adınız" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                                        <div class="validation"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 mb-3">
+                                                    <div class="form-group">
+                                                        <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Please enter a valid email" />
+                                                        <div class="validation"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 mb-3">
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Konu" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                                                        <div class="validation"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 mb-3">
+                                                    <div class="form-group">
+                                                        <textarea class="form-control" name="message" id="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Mesaj Yaz"></textarea>
+                                                        <div class="validation"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <button style="background-color:#6699cc;" type="submit" class="btn btn-outline-success  button-a  button-big">Gönder</button>
+
+                                                </div>
+                                                <div>
+                                                    <p style="margin-left:30px; margin-top:10px;font-size:19px;color:green;">@ViewBag.dogru</p>
+                                                    <p style="margin-left:30px; margin-top:10px;font-size:19px;color:darkred;">@ViewBag.yanlis</p>
+
+
+                                                </div>
+                                                
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="title-box-2 pt-4 pt-md-0">
+                                        <h5 class="title-left">
+                                            İletişim
+                                        </h5>
+                                    </div>
+                                    <div class="more-info">
+                                        <div class="row">
+                                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1528.1773717366887!2d32.879506969157426!3d40.00052299656542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d34d6c0b4f6613%3A0x3d347f09e500c944!2zQWRuYW4gTWVuZGVyZXMsIMWeaHQuIEhha2FuIMOcbGdlciBTay4gTm86NDgsIDA2MzAwIEtlw6dpw7ZyZW4vQW5rYXJh!5e0!3m2!1str!2str!4v1571225577126!5m2!1str!2str" width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+                                        </div>
+                                        @*<p class="lead">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorum dolorem soluta quidem
+                                                expedita aperiam aliquid at.
+                                                Totam magni ipsum suscipit amet? Autem nemo esse laboriosam ratione nobis
+                                                mollitia inventore?
+                                            </p>*@
+                                        <ul class="list-ico">
+                                            <li><span class="ion-ios-location"></span> Adnan Menderes Mah.Şht.Hakan Ülger Sok. Keçiören/ANKARA</li>
+                                            <li><span class="ion-ios-telephone"></span> +90(545) 532-81-79</li>
+                                            <li><span class="ion-email"></span> info@yilmazadem.com</li>
+                                        </ul>
+                                    </div>
+                                    <div class="socials">
+                                        <ul>
+                                            <li><a href="https://www.facebook.com/adem.yilmaz.75054"><span class="ico-circle"><i class="ion-social-facebook"></i></span></a></li>
+                                            <li><a href="https://www.instagram.com/35ademyillmazz06/?hl=tr"><span class="ico-circle"><i class="ion-social-instagram"></i></span></a></li>
+                                            <li><a href=""><span class="ico-circle"><i class="ion-social-twitter"></i></span></a></li>
+                                            <li><a href="https://www.linkedin.com/in/adem-yilmaz-9a7a78150"><span class="ico-circle"><i class="ion-social-linkedin"></i></span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="copyright-box">
+                            <p class="copyright">&copy; Adem YILMAZ <strong>Tüm hakları saklıdır</strong>. 2018-2019</p>
+                            <div class="credits">
+                                <!--
+                                  All the links in the footer should remain intact.
+                                  You can delete the links only if you purchased the pro version.
+                                  Licensing information: https://bootstrapmade.com/license/
+                                  Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
+                                -->
+                                Designed by <a href="http://www.yilmazadem.com">Adem Yılmaz</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    <div id="preloader"></div>
+    <!-- JavaScript Libraries -->
+    <script src="~/lib/jquery/jquery.min.js"></script>
+    <script src="~/lib/jquery/jquery-migrate.min.js"></script>
+    <script src="~/lib/popper/popper.min.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="~/lib/easing/easing.min.js"></script>
+    <script src="~/lib/counterup/jquery.waypoints.min.js"></script>
+    <script src="~/lib/counterup/jquery.counterup.js"></script>
+    <script src="~/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="~/lib/lightbox/js/lightbox.min.js"></script>
+    <script src="~/lib/typed/typed.min.js"></script>
+    <!-- Contact Form JavaScript File -->
+    <script src="contactform/contactform.js"></script>
+    <!-- Template Main Javascript File -->
+    <script src="~/js/main.js"></script>
+
+</body>
+
+
+</html>
